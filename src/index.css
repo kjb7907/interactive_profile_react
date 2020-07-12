@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face { 
+  font-family: 'pixel'; /* 폰트 패밀리 이름 주기*/ 
+  src: url('assets/fonts/DungGeunMo/DungGeunMo.woff'); /*폰트 파일 주소*/ 
+}

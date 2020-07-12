@@ -1,3 +1,40 @@
+# Jbin Intractive Profile React.ver
+
+![Alt text](https://jbin7.github.io/portfolio/img/projects/interactive_profile/1.png)
+
+- - -
+
+## 프로젝트 구조
+
+``` bash
+. public                        # static경로
+. src
+├─ assets                       
+   ├─ fonts                     # 폰트
+   ├─ images                    # 이미지
+   └─ styles                    # css
+├─ components                   # 컴포넌트                     
+├─ App.js                       # 리액트 메인 app
+├─ App.css                      # 리액트 메인 css
+├─ App.test.js                  # ?
+├─ index.css                    # global css
+├─ index.js                     # 리액트 최상위 js
+├─ serviceWorker.js             # 서비스워커 (미사용)
+└─ setupTest.js                 # ?
+. .gitignore
+. jsconfig.json
+. package.json
+. yarn.lock
+
+```
+
+
+- - -
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
