@@ -1,0 +1,19 @@
+.character-layer {
+  position: absolute;
+  width: 100rem;
+  height: 56.2vw;
+}
+
+.character-box {
+  position: absolute;
+  display: inline-block;
+  width: 15.625vw;
+  height: 15.625vw;
+  margin-top: 35vw;
+  margin-left: 42vw;
+  background-image: url('../images/character/charizard/normal_right_1.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-backgroind-size: cover;    
+}

@@ -1,12 +1,10 @@
 .profile-app {
   font-family: pixel;
-  font-size:40px;
-  .block-1 {
-    width: 200px; height: 200px;
-    background-color: black;
-  }
-  .block-2 {
-    width: 100px; height: 300px;
-    background-color: red;
-  }
+  width: 100vw;
+  height: 56.2vw;
+  background-image: url('../images/background/1.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-backgroind-size: cover;  
 }

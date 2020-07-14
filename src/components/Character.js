@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import 'assets/styles/character.scss'
 
 class Character extends Component {
   render() {
     return (
-      <div>
-        캐릭터
+      <div className="character-box">
+      
       </div>
     );
   }
