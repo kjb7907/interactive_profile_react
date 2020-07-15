@@ -1,5 +1,6 @@
 .profile-app {
   font-family: pixel;
+  overflow:hidden;
   width: 100vw;
   height: 56.2vw;
   background-image: url('../images/background/1.png');
@@ -7,4 +8,19 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   -ms-backgroind-size: cover;  
+}
+
+.app-handler {
+  position: absolute;
+  width: 100%; height: 56.2vw;
+  display: flex;
+  align-items: center;
+  .right {
+    width: 50%; height: 100%;
+    background-color: transparent;
+  }
+  .left {
+    width: 50%; height: 100%;
+    background-color: transparent;
+  }
 }

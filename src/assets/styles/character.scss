@@ -11,9 +11,65 @@
   height: 15.625vw;
   margin-top: 35vw;
   margin-left: 42vw;
-  background-image: url('../images/character/charizard/normal_right_1.png');
+}
+
+.charizard {
+  width: 100%;
+  height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -ms-backgroind-size: cover;    
+  &.normal.right {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: charizard-normal;
+  }
+
+  &.run.right{
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: charizard-run-right;
+  }
+
+  &.run.left {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: charizard-run-left;
+  }
+}
+
+@keyframes charizard-normal {
+  0%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_1.png");background-size: 100% 100%;}
+  10%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_2.png");background-size: 100% 100%;}
+  20%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_2.png");background-size: 100% 100%;}
+  30%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_3.png");background-size: 100% 100%;}
+  40%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_3.png");background-size: 100% 100%;}
+  50%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_4.png");background-size: 100% 100%;}
+  60%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_4.png");background-size: 100% 100%;}
+  70%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_5.png");background-size: 100% 100%;}
+  80%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_5.png");background-size: 100% 100%;}
+  90%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_6.png");background-size: 100% 100%;}
+  100%   {top: 0px; left: 0px; background: url("../images/character/charizard/normal_right_7.png");background-size: 100% 100%;}
+}
+
+@keyframes charizard-run-right {
+  0%,10%   {top: 0px; left: 0px; background: url("../images/character/charizard/run_right_1.png");background-size: 100% 100%;}
+  20%,30%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_right_1.png");background-size: 100% 100%;}
+  40%,50%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_right_2.png");background-size: 100% 100%;}
+  60%,70%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_right_3.png");background-size: 100% 100%;}
+  80%,90%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_right_4.png");background-size: 100% 100%;}
+  100%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_right_4.png");background-size: 100% 100%;}
+}
+
+@keyframes charizard-run-left {
+  0%,10%   {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_1.png");background-size: 100% 100%;}
+  20%,30%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_1.png");background-size: 100% 100%;}
+  40%,50%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_2.png");background-size: 100% 100%;}
+  60%,70%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_3.png");background-size: 100% 100%;}
+  80%,90%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_4.png");background-size: 100% 100%;}
+  100%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_4.png");background-size: 100% 100%;}
 }
