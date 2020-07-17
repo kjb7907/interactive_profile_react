@@ -6,7 +6,7 @@ class Character extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      character: 'charizard',
+      character: 'venusaur',
       form: 'normal',
       direction: 'right',
     }

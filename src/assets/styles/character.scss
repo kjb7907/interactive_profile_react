@@ -13,13 +13,64 @@
   margin-left: 42vw;
 }
 
-.charizard {
+.character {
   width: 100%;
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -ms-backgroind-size: cover;    
+}
+
+.hitokage {
+  &.normal.right {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: hitokage-normal;
+  }
+
+  &.run.right{
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: hitokage-run-right;
+  }
+
+  &.run.left {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: hitokage-run-left;
+  }
+}
+
+@keyframes hitokage-normal {
+  0%,10%,20%   {top: 0px; left: 0px; background: url("../images/character/hitokage/normal_right_1.png");background-size: 100% 100%;}
+  30%,40%,50%,60%  {top: 0px; left: 0px; background: url("../images/character/hitokage/normal_right_2.png");background-size: 100% 100%;}
+  70%,80%,90%,100%  {top: 0px; left: 0px; background: url("../images/character/hitokage/normal_right_3.png");background-size: 100% 100%;}
+}
+
+@keyframes hitokage-run-right {
+  0%,10%   {top: 0px; left: 0px; background: url("../images/character/hitokage/run_right_1.png");background-size: 100% 100%;}
+  20%,30%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_right_2.png");background-size: 100% 100%;}
+  40%,50%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_right_3.png");background-size: 100% 100%;}
+  60%,70%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_right_4.png");background-size: 100% 100%;}
+  80%,90%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_right_5.png");background-size: 100% 100%;}
+  100%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_right_6.png");background-size: 100% 100%;}
+}
+
+@keyframes hitokage-run-left {
+  0%,10%   {top: 0px; left: 0px; background: url("../images/character/hitokage/run_left_1.png");background-size: 100% 100%;}
+  20%,30%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_left_2.png");background-size: 100% 100%;}
+  40%,50%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_left_3.png");background-size: 100% 100%;}
+  60%,70%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_left_4.png");background-size: 100% 100%;}
+  80%,90%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_left_5.png");background-size: 100% 100%;}
+  100%  {top: 0px; left: 0px; background: url("../images/character/hitokage/run_left_6.png");background-size: 100% 100%;}
+}
+
+
+.charizard {
   &.normal.right {
     background-repeat: no-repeat;
     animation-duration: 1s;
@@ -72,4 +123,207 @@
   60%,70%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_3.png");background-size: 100% 100%;}
   80%,90%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_4.png");background-size: 100% 100%;}
   100%  {top: 0px; left: 0px; background: url("../images/character/charizard/run_left_4.png");background-size: 100% 100%;}
+}
+
+.squirtle {
+  &.normal.right {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: squirtle-normal;
+  }
+
+  &.run.right{
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: squirtle-run-right;
+  }
+
+  &.run.left {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: squirtle-run-left;
+  }
+}
+
+@keyframes squirtle-normal {
+  0%,10%,20%,30%   {top: 0px; left: 0px; background: url("../images/character/squirtle/normal_right_1.png");background-size: 100% 100%;}
+  40%,50%,60%   {top: 0px; left: 0px; background: url("../images/character/squirtle/normal_right_2.png");background-size: 100% 100%;}
+  70%,80%,90%,100%   {top: 0px; left: 0px; background: url("../images/character/squirtle/normal_right_3.png");background-size: 100% 100%;}
+}
+
+@keyframes squirtle-run-right {
+  0%,10%   {top: 0px; left: 0px; background: url("../images/character/squirtle/run_right_1.png");background-size: 100% 100%;}
+  20%,30%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_right_2.png");background-size: 100% 100%;}
+  40%,50%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_right_3.png");background-size: 100% 100%;}
+  60%,70%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_right_4.png");background-size: 100% 100%;}
+  80%,90%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_right_5.png");background-size: 100% 100%;}
+  100%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_right_6.png");background-size: 100% 100%;}
+}
+
+@keyframes squirtle-run-left {
+  0%,10%   {top: 0px; left: 0px; background: url("../images/character/squirtle/run_left_1.png");background-size: 100% 100%;}
+  20%,30%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_left_2.png");background-size: 100% 100%;}
+  40%,50%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_left_3.png");background-size: 100% 100%;}
+  60%,70%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_left_4.png");background-size: 100% 100%;}
+  80%,90%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_left_5.png");background-size: 100% 100%;}
+  100%  {top: 0px; left: 0px; background: url("../images/character/squirtle/run_left_6.png");background-size: 100% 100%;}
+}
+
+.blastoise {
+  &.normal.right {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blastoise-normal;
+  }
+
+  &.run.right{
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blastoise-run-right;
+  }
+
+  &.run.left {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blastoise-run-left;
+  }
+}
+
+@keyframes blastoise-normal {
+  0% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_1.png");background-size: 100% 100%;}
+  10% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_1.png");background-size: 100% 100%;}
+  20% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_2.png");background-size: 100% 100%;}
+  30% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_2.png");background-size: 100% 100%;}
+  40% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_3.png");background-size: 100% 100%;}
+  50% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_4.png");background-size: 100% 100%;}
+  60% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_5.png");background-size: 100% 100%;}
+  70% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_6.png");background-size: 100% 100%;}
+  80% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_6.png");background-size: 100% 100%;}
+  90% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_7.png");background-size: 100% 100%;}
+  100% {top: 0px; left: 0px; background: url("../images/character/blastoise/normal_right_7.png");background-size: 100% 100%;}
+
+}
+
+@keyframes blastoise-run-right {
+  0% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_1.png");background-size: 100% 100%;}
+  10% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_1.png");background-size: 100% 100%;}
+  20% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_2.png");background-size: 100% 100%;}
+  30% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_3.png");background-size: 100% 100%;}
+  40% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_4.png");background-size: 100% 100%;}
+  50% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_5.png");background-size: 100% 100%;}
+  60% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_6.png");background-size: 100% 100%;}
+  70% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_7.png");background-size: 100% 100%;}
+  80% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_7.png");background-size: 100% 100%;}
+  90% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_8.png");background-size: 100% 100%;}
+  100% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_right_8.png");background-size: 100% 100%;}
+}
+
+@keyframes blastoise-run-left {
+  0% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_1.png");background-size: 100% 100%;}
+  10% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_1.png");background-size: 100% 100%;}
+  20% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_2.png");background-size: 100% 100%;}
+  30% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_3.png");background-size: 100% 100%;}
+  40% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_4.png");background-size: 100% 100%;}
+  50% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_5.png");background-size: 100% 100%;}
+  60% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_6.png");background-size: 100% 100%;}
+  70% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_7.png");background-size: 100% 100%;}
+  80% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_7.png");background-size: 100% 100%;}
+  90% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_8.png");background-size: 100% 100%;}
+  100% {top: 0px; left: 0px; background: url("../images/character/blastoise/run_left_8.png");background-size: 100% 100%;}
+}
+
+.bulbasaur {
+  &.normal.right {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: bulbasaur-normal;
+  }
+
+  &.run.right{
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: bulbasaur-run-right;
+  }
+
+  &.run.left {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: bulbasaur-run-left;
+  }
+}
+
+@keyframes bulbasaur-normal {
+  0%,10%,20%,30%   {top: 0px; left: 0px; background: url("../images/character/bulbasaur/normal_right_1.png");background-size: 100% 100%;}
+  40%,50%,60%   {top: 0px; left: 0px; background: url("../images/character/bulbasaur/normal_right_2.png");background-size: 100% 100%;}
+  70%,80%,90%,100%   {top: 0px; left: 0px; background: url("../images/character/bulbasaur/normal_right_3.png");background-size: 100% 100%;}
+}
+
+@keyframes bulbasaur-run-right {
+  0%,10% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_right_1.png");background-size: 100% 100%;}
+  20%,30% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_right_2.png");background-size: 100% 100%;}
+  40%,50% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_right_3.png");background-size: 100% 100%;}
+  60%,70% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_right_4.png");background-size: 100% 100%;}
+  80%,90%,100% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_right_5.png");background-size: 100% 100%;}
+}
+
+@keyframes bulbasaur-run-left {
+  0%,10% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_left_1.png");background-size: 100% 100%;}
+  20%,30% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_left_2.png");background-size: 100% 100%;}
+  40%,50% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_left_3.png");background-size: 100% 100%;}
+  60%,70% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_left_4.png");background-size: 100% 100%;}
+  80%,90%,100% {top: 0px; left: 0px; background: url("../images/character/bulbasaur/run_left_5.png");background-size: 100% 100%;}
+}
+
+.venusaur {
+  &.normal.right {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: venusaur-normal;
+  }
+
+  &.run.right{
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: venusaur-run-right;
+  }
+
+  &.run.left {
+    background-repeat: no-repeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: venusaur-run-left;
+  }
+}
+
+@keyframes venusaur-normal {
+  0%,10%,20%,30%   {top: 0px; left: 0px; background: url("../images/character/venusaur/normal_right_1.png");background-size: 100% 100%;}
+  40%,50%,60%   {top: 0px; left: 0px; background: url("../images/character/venusaur/normal_right_2.png");background-size: 100% 100%;}
+  70%,80%,90%,100%   {top: 0px; left: 0px; background: url("../images/character/venusaur/normal_right_3.png");background-size: 100% 100%;}
+}
+
+@keyframes venusaur-run-right {
+  0%,10% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_right_1.png");background-size: 100% 100%;}
+  20%,30% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_right_2.png");background-size: 100% 100%;}
+  40%,50% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_right_3.png");background-size: 100% 100%;}
+  60%,70% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_right_4.png");background-size: 100% 100%;}
+  80%,90%,100% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_right_5.png");background-size: 100% 100%;}
+}
+
+@keyframes venusaur-run-left {
+  0%,10% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_left_1.png");background-size: 100% 100%;}
+  20%,30% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_left_2.png");background-size: 100% 100%;}
+  40%,50% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_left_3.png");background-size: 100% 100%;}
+  60%,70% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_left_4.png");background-size: 100% 100%;}
+  80%,90%,100% {top: 0px; left: 0px; background: url("../images/character/venusaur/run_left_5.png");background-size: 100% 100%;}
 }
