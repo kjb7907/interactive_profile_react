@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'assets/styles/profile.scss'
 import Character from 'components/Character'
+import Stage from 'components/Stage'
 
 class App extends Component {
 
@@ -35,14 +36,19 @@ class App extends Component {
         <div className="app-handler">
           <div className="left" 
             onMouseDown={this.handleLeft} 
-            onMouseUp={this.handleDefault}>
+            onMouseUp={this.handleDefault}
+            onTouchStart={this.handleLeft}
+            onTouchEnd={this.handleDefault}>
           </div>
           <div className="right" 
             onMouseDown={this.handleRight} 
-            onMouseUp={this.handleDefault}>
+            onMouseUp={this.handleDefault}
+            onTouchStart={this.handleRight}
+            onTouchEnd={this.handleDefault}>              
           </div>
         </div>
         <Character action={this.state.action}/>
+        <Stage action={this.state.action}/>
       </div>
     );
   }

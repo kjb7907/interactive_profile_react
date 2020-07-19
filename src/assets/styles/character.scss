@@ -1,16 +1,12 @@
-.character-layer {
-  position: absolute;
-  width: 100rem;
-  height: 56.2vw;
-}
 
 .character-box {
   position: absolute;
   display: inline-block;
   width: 15.625vw;
   height: 15.625vw;
-  margin-top: 35vw;
+  margin-top: 33vw;
   margin-left: 42vw;
+  z-index: 3;
 }
 
 .character {
