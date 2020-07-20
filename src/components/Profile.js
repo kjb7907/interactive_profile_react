@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'assets/styles/profile.scss'
 import Character from 'components/Character'
 import Stage from 'components/Stage'
+import ObjectLayer from 'components/ObjectLayer'
 
 class App extends Component {
 
@@ -49,6 +50,7 @@ class App extends Component {
         </div>
         <Character action={this.state.action}/>
         <Stage action={this.state.action}/>
+        <ObjectLayer action={this.state.action}/>
       </div>
     );
   }
