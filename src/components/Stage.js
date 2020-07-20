@@ -23,7 +23,8 @@ class Stage extends Component {
     let {action} = nextProps
     switch (action) {
       case 'd':
-        this.changeAction('paused', 'right')
+        // 애니메이션 진행 방향은 유지한채 정지시키기
+        this.changeAction('paused', this.state.direction)
         break;
       case 'r':
         this.changeAction('move', 'right')
