@@ -15,19 +15,20 @@ class ObjectLayer extends Component {
   increment = ()=>{
     // 오브젝트 좌표값 증가
     this.setState({
-      locationPoint: this.state.locationPoint + 0.15
+      locationPoint: this.state.locationPoint + 0.2
     })
   }  
 
   decrement = ()=>{
     // 오브젝트 좌표감 감소
     this.setState({
-      locationPoint: this.state.locationPoint - 0.15
+      locationPoint: this.state.locationPoint - 0.2
     })
   }
 
   moveRight = ()=>{
     // 오른쪽으로 이동시 좌표값 감소
+    window.clearInterval(layerInterval)
     layerInterval = window.setInterval(()=>{
       this.decrement()
     },10)
@@ -35,6 +36,7 @@ class ObjectLayer extends Component {
 
   moveLeft = ()=>{
     // 왼쪽으로 이동시 좌표값 증가
+    window.clearInterval(layerInterval)
     layerInterval = window.setInterval(()=>{
       this.increment()
     },10)
@@ -72,6 +74,10 @@ class ObjectLayer extends Component {
         <div className="object title">
         </div>
         <div className="object pannel-1">
+          <div className="inner">
+            <div>Developer Jbin Profile</div>
+            <img src={require('assets/images/object/elric.png')} alt="jbin"/>
+          </div>
         </div>
       </div>
     );

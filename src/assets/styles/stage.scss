@@ -7,28 +7,28 @@
   background-size: 31.25vw 10.416vw;
 
   &.move.right {
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-name: stage-move-right;
     animation-timing-function: linear;
     animation-play-state: revert;
   }
   &.move.left { 
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-name: stage-move-left;
     animation-timing-function: linear;
     animation-play-state: running;
   }
   &.paused.right {
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-name: stage-move-right;
     animation-timing-function: linear;
     animation-play-state: paused;
   }
   &.paused.left { 
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-name: stage-move-left;
     animation-timing-function: linear;
