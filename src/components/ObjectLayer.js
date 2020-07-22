@@ -8,21 +8,21 @@ class ObjectLayer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      locationPoint: 20, // 오브젝트레이어 좌표값 (mrgin-left 값)
+      locationPoint: 0, // 오브젝트레이어 좌표값 (mrgin-left 값)
     }
   }
 
   increment = ()=>{
     // 오브젝트 좌표값 증가
     this.setState({
-      locationPoint: this.state.locationPoint + 0.3
+      locationPoint: this.state.locationPoint + 0.15
     })
   }  
 
   decrement = ()=>{
     // 오브젝트 좌표감 감소
     this.setState({
-      locationPoint: this.state.locationPoint - 0.3
+      locationPoint: this.state.locationPoint - 0.15
     })
   }
 
@@ -69,7 +69,10 @@ class ObjectLayer extends Component {
     }
     return (
       <div className="object-layer" style={style}>
-        <div className="object"></div>
+        <div className="object title">
+        </div>
+        <div className="object pannel-1">
+        </div>
       </div>
     );
   }

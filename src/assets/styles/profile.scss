@@ -1,14 +1,13 @@
 .profile-app {
   font-family: pixel;
+  font-size: 1vw;
+  color: snow;
   position: relative;
   overflow:hidden;
   width: 100vw;
   height: 50vw;
   background-image: url('../images/background/1.png');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-backgroind-size: cover;  
+  background-size: cover;
 }
 
 .app-handler {
