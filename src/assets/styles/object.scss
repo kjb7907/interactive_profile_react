@@ -16,18 +16,41 @@
   0%   {bottom:60vw}
   100%  {bottom:20vw}
 }
-
 .object.pannel-1 {
   left: 50vw;
   width: 39vw; height: 26vw;
   background-image: url('../images/object/pannel1.png');
   background-size: cover;
   font-size: 2.5vw;
-  .inner {
-    width: 100%; height: 100%;
-    padding: 2vw;
+  padding: 2vw;
+  box-sizing: border-box;
+  .title {
+    text-align: center;
+    display: block;
+    margin: 1vw;
+    font-style: italic;
+    text-shadow: -0.3vw 0 white, 0 0.3vw white, 0.2vw 0 white, 0 -0.2vw white;
+    .blue {
+      color: #3498DB
+    }
+    .red {
+      color: #E74C3C
+    }
+    .yellow {
+      color: #f39c12;
+    }
+  }
+  .content {
+    display: flex;
+    align-items: center; justify-content: center;
   }
   img {
     width: 10vw;
+    margin-right: 1vw;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    font-size: 1.5vw;
   }
 }

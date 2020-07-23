@@ -71,14 +71,38 @@ class ObjectLayer extends Component {
     }
     return (
       <div className="object-layer" style={style}>
-        <div className="object title">
-        </div>
+
+        {/* 타이틀 */}
+        {/* <div className="object title"></div> */}
+
+        {/* 프로필 패널 */}
         <div className="object pannel-1">
-          <div className="inner">
-            <div>Developer Jbin Profile</div>
+          <h3 className="title">
+            <span className="blue">Developer </span> 
+            <span className="yellow">Jbin </span> 
+            <span className="red">Profile</span></h3>
+          <div className="content">
             <img src={require('assets/images/object/elric.png')} alt="jbin"/>
+            <div>
+              <ul>
+                <li>김 정빈(jbin)</li>
+                <li>1993 / Korea</li>
+                <li>2020년 기준 4년차</li>
+                <li>jbin7@gmail.com</li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        {/* 패널 2 */}
+
+        {/* 패널 3 */}
+
+        {/* 패널 4 */}
+
+        {/* 패널 5 */}
+
+
       </div>
     );
   }
