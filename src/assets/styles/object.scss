@@ -16,10 +16,9 @@
   0%   {bottom:60vw}
   100%  {bottom:20vw}
 }
-.object.pannel-1 {
-  left: 50vw;
+
+.object.board {
   width: 39vw; height: 26vw;
-  background-image: url('../images/object/pannel1.png');
   background-size: cover;
   font-size: 2.5vw;
   padding: 2vw;
@@ -39,18 +38,96 @@
     .yellow {
       color: #f39c12;
     }
-  }
-  .content {
-    display: flex;
-    align-items: center; justify-content: center;
-  }
-  img {
-    width: 10vw;
-    margin-right: 1vw;
+    .green {
+      color: #27Ae60;
+    }
+    .purple {
+      color: #9b59b6;
+    }
   }
   ul {
     padding: 0;
+    margin: 0;
     list-style: none;
+  }
+}
+
+.object.board.profile-board {
+  background-image: url('../images/object/board_1.png');
+  left: 100vw;
+  .content {
+    display: flex;
+    align-items: flex-start; justify-content: center;
+  }
+  img.profile-img {
+    width: 9vw;
+    margin-right: 2vw;
+  }
+  ul {
     font-size: 1.5vw;
   }
+  a {
+    text-decoration: none;
+    color: #27Ae60;
+    border-bottom: solid 0.1vw #27Ae60;
+  }  
+}
+
+.object.board.lang-board {
+  background-image: url('../images/object/board_2.png');
+  left: 150vw;
+  .content {
+    display: flex;
+    align-items: flex-start; justify-content: center;
+  }  
+  ul {
+    font-size: 2vw;
+    margin-right: 2vw;
+  }  
+}
+
+.object.board.frontend-skills-board {
+  background-image: url('../images/object/board_3.png');
+  left: 200vw;
+  .content {
+    display: flex; flex-wrap: wrap;
+    align-items: flex-start; justify-content: flex-start;
+    .content-unit {
+      margin: 1vw;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  ul {
+    font-size: 2vw;
+    margin-left: 1vw;
+  }    
+  img {
+    &.react-img {
+      width: 5vw; height: 4.5vw;
+    }
+    &.vue-img {
+      width: 5vw; height: 4.5vw;
+    }
+    &.jquery-img {
+      width: 4.5vw;
+    }
+  }
+}
+
+.object.board.backend-skills-board {
+  background-image: url('../images/object/board_4.png');
+  left: 250vw;
+  .content {
+    display: flex; align-items: flex-start; justify-content: center;
+  }
+}
+
+.object.board.etc-board {
+  background-image: url('../images/object/board_5.png');
+  left: 300vw;
+  .content {
+    display: flex; align-items: flex-start; justify-content: center;
+  }  
 }

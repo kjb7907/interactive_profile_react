@@ -1,3 +1,13 @@
+.character-selector-box {
+  position: absolute;
+  top:0; left:0;
+  z-index: 999;
+  user-select: none;
+  img {
+    width: 4vw; height: 4vw;
+    cursor: pointer;
+  }
+}
 
 .character-box {
   position: absolute;

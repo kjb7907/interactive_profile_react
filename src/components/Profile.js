@@ -29,23 +29,46 @@ class App extends Component {
     this.setState({
       action: 'l'
     })
-  }  
+  }
+
+  createKeyEvent = ()=> {
+    // 키보드로 핸들링 가능하게하는 이벤트 생성
+    let self = this
+    window.addEventListener("keydown", function (e) {
+      if(e.keyCode === 37){
+        self.handleLeft()
+      }else if(e.keyCode === 39){
+        self.handleRight()
+      }
+    })
+    window.addEventListener("keyup", function (e) {
+      if(e.keyCode === 37 || e.keyCode ===39){
+        self.handleDefault()
+      }
+    })
+  }
+  
+  componentDidMount() {
+    this.createKeyEvent()
+  }
 
   render() {
     return (
       <div className="profile-app">
         <div className="app-handler">
-          <div className="left" 
+          <div className="left handler" 
             onMouseDown={this.handleLeft} 
             onMouseUp={this.handleDefault}
             onTouchStart={this.handleLeft}
             onTouchEnd={this.handleDefault}>
+            &lt;
           </div>
-          <div className="right" 
+          <div className="right handler" 
             onMouseDown={this.handleRight} 
             onMouseUp={this.handleDefault}
             onTouchStart={this.handleRight}
-            onTouchEnd={this.handleDefault}>              
+            onTouchEnd={this.handleDefault}>
+            &gt;       
           </div>
         </div>
         <Character action={this.state.action}/>

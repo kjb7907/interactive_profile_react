@@ -73,35 +73,118 @@ class ObjectLayer extends Component {
       <div className="object-layer" style={style}>
 
         {/* 타이틀 */}
-        {/* <div className="object title"></div> */}
+        <div className="object title"></div>
 
-        {/* 프로필 패널 */}
-        <div className="object pannel-1">
+        {/* 프로필 보드 */}
+        <div className="object board profile-board">
           <h3 className="title">
             <span className="blue">Developer </span> 
             <span className="yellow">Jbin </span> 
-            <span className="red">Profile</span></h3>
+            <span className="red">Profile</span>
+          </h3>
           <div className="content">
-            <img src={require('assets/images/object/elric.png')} alt="jbin"/>
+            <img className="profile-img" src={require('assets/images/object/jbin.png')} alt="jbin"/>
             <div>
               <ul>
                 <li>김 정빈(jbin)</li>
-                <li>1993 / Korea</li>
+                <li>1993.04.10 / Korea</li>
                 <li>2020년 기준 4년차</li>
                 <li>jbin7@gmail.com</li>
+                <li><a href="https://github.com/jbin7" target="_blink">github</a></li>
+                <li><a href="https://jhonnywest.tistory.com/" target="_blink">blog</a></li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* 패널 2 */}
+        {/* 사용언어 보드 */}
 
-        {/* 패널 3 */}
+        <div className="object board lang-board">
+          <h3 className="title">
+            <span className="red">experienced - Language</span>
+          </h3>
+          <div className="content">
+            <ul>
+              <li>Java</li>
+              <li>Javascript</li>
+              <li>es6</li>
+              <li>python</li>
+              <li>SQL</li>
+            </ul>
+            <ul>
+              <li>HTML</li>
+              <li>css</li>
+              <li>scss</li>
+            </ul>
+          </div>
+        </div>
 
-        {/* 패널 4 */}
+        {/* 프론트엔드 스킬 보드 */}
 
-        {/* 패널 5 */}
+        <div className="object board frontend-skills-board">
+          <h3 className="title">
+            <span className="green">frontend - skills</span>
+          </h3>
+          <div className="content">
+            <div className="content-unit">
+              <img className="vue-img" src={require('assets/images/object/vue.png')} alt="jbin"/>
+              <ul>
+                <li>Vue.js</li>
+                <li>vuex</li>
+                <li>nuxt.js</li>
+              </ul>
+            </div>
+            <div className="content-unit">
+              <img className="react-img" src={require('assets/images/object/react.png')} alt="jbin"/>
+              <ul>
+                <li>React.js</li>
+                <li>Redux</li>
+              </ul>
+            </div>            
+            <div className="content-unit">
+            <img className="jquery-img" src={require('assets/images/object/jquery.png')} alt="jbin"/>
+              <ul>
+                <li>jQuery</li>
+              </ul>
+            </div>              
+          </div>
+        </div>        
 
+        {/* 백엔드 스킬 보드 */}
+        <div className="object board backend-skills-board">
+          <h3 className="title">
+            <span className="purple">backend - skills</span>
+          </h3>
+          <div className="content">
+            <ul>
+              <li>Spring-Framework</li>
+              <li>Node.js Express</li>
+              <li>Django</li>
+              <li>Django REST framework</li>
+            </ul>
+          </div>
+        </div>             
+
+        {/* 기타 보드 */}
+        <div className="object board etc-board">
+          <h3 className="title">
+            <span className="yellow">ETC / Tools</span>
+          </h3>
+          <div className="content">
+            <ul>
+              <li>AWS</li>
+              <li>EC2</li>
+              <li>RDS</li>
+              <li>S3</li>
+              <li>docker</li>
+            </ul>
+            <ul>
+              <li>vscode</li>
+              <li>webstorm</li>
+              <li>inteliJ</li>
+            </ul>
+          </div>
+        </div>      
 
       </div>
     );
